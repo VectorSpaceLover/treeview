@@ -13,16 +13,12 @@
 
 
 import React from "react";
-import NavBar from './components/layout/navbar'
-import {BrowserRouter} from 'react-router-dom';
+
 import Routers from './router'
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <NavBar />
-      </BrowserRouter>
       <Routers/>
     </>
   );
