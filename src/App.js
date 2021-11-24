@@ -1,25 +1,21 @@
-// import NavBar from "./components/layout/navbar";
-// import Routers from "./router";
-// function App() {
-//   return (
-//     <>
-//       <NavBar/>
-//       <Routers/>
-//     </>
-//   );
-// }
-
-// export default App;
-
-
 import React from "react";
+import { PresidentProvider } from "./contexts/president";
+import {TreeDataProvider} from "./contexts/treedata";
+import {AuditorsProvider} from "./contexts/auditors";
 
 import Routers from './router'
 
 function App() {
   return (
     <>
-      <Routers/>
+      <AuditorsProvider>
+        <PresidentProvider>
+          <TreeDataProvider>
+            <Routers/>
+          </TreeDataProvider>
+        </PresidentProvider>
+      </AuditorsProvider>
+      
     </>
   );
 }
