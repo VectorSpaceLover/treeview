@@ -1,0 +1,11 @@
+[
+    {
+      "id": 1,
+      "parent": 0,
+      "droppable": true,
+      "text": "Schedule",
+      "data": {
+        "fileSize": "Standard"
+      }
+    }
+  ]

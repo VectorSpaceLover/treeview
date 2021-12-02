@@ -1,5 +1,5 @@
 import React from "react";
-import { PresidentProvider } from "./contexts/president";
+import { ParticipantProvider } from "./contexts/participant";
 import {TreeDataProvider} from "./contexts/treedata";
 import {AuditorsProvider} from "./contexts/auditors";
 
@@ -9,11 +9,11 @@ function App() {
   return (
     <>
       <AuditorsProvider>
-        <PresidentProvider>
+        <ParticipantProvider>
           <TreeDataProvider>
             <Routers/>
           </TreeDataProvider>
-        </PresidentProvider>
+        </ParticipantProvider>
       </AuditorsProvider>
       
     </>
