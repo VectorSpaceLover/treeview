@@ -220,9 +220,10 @@ function Home() {
             <Grid item lg = {3} md = {6} sm = {12} xs = {12}>
               <Select
                 multi
-                create = {true}
+                create = {false}
                 options={participant}
-                onChange={(val) => setParticipant([...participant, {value: participant.length, label: val[val.length - 1]['value']}])}
+                // onChange={(val) => setParticipant([...participant, {value: participant.length, label: val[val.length - 1]['value']}])}
+                onChange={(val) => console.log(val)}
               />
             </Grid>
           </Grid>
